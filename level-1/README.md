@@ -1,5 +1,32 @@
+
 # Solution of Level 1
 
+
+## Task List
+
+| No. | Task Description                                                                                     | Solution                                                         |
+| --- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 1   | [Custom Apache User Setup](#task-1-custom-apache-user-setup)                                         | [Solution](#task-1-custom-apache-user-setup)                     |
+| 2   | [Group Creation and User Assignment](#task-2-group-creation-and-user-assignment)                     | [Solution](#task-2-group-creation-and-user-assignment)           |
+| 3   | [Linux User Setup with Non-Interactive Shell](#task-3-linux-user-setup-with-non-interactive-shell)   | [Solution](#task-3-linux-user-setup-with-non-interactive-shell)  |
+| 4   | [Service User Creation without Home Directory](#task-4-service-user-creation-without-home-directory) | [Solution](#task-4-service-user-creation-without-home-directory) |
+| 5   | [Temporary User Setup with Expiry](#task-5-temporary-user-setup-with-expiry)                         | [Solution](#task-5-temporary-user-setup-with-expiry)             |
+| 6   | [Linux User Data Transfer](#task-6-linux-user-data-transfer)                                         | [Solution](#task-6-linux-user-data-transfer)                     |
+| 7   | [Secure Root SSH Access](#task-7-secure-root-ssh-access)                                             | [Solution](#task-7-secure-root-ssh-access)                       |
+| 8   | [Data Backup for Developer](#task-8-data-backup-for-developer)                                       | [Solution](#task-8-data-backup-for-developer)                    |
+| 9   | [Script Execution Permissions](#task-9-script-execution-permissions)                                 | [Solution](#task-9-script-execution-permissions)                 |
+| 10  | [File Permission Correction](#task-10-file-permission-correction)                                    | [Solution](#task-10-file-permission-correction)                  |
+| 11  | [String Replacement](#task-11-string-replacement)                                                    | [Solution](#task-11-string-replacement)                          |
+| 12  | [Secure Data Transfer](#task-12-secure-data-transfer)                                                | [Solution](#task-12-secure-data-transfer)                        |
+| 13  | [Restrict Cron Access](#task-13-restrict-cron-access)                                                | [Solution](#task-13-restrict-cron-access)                        |
+| 14  | [Default GUI Boot Configuration](#task-14-default-gui-boot-configuration)                            | [Solution](#task-14-default-gui-boot-configuration)              |
+| 15  | [Timezone Alignment](#task-15-timezone-alignment)                                                    | [Solution](#task-15-timezone-alignment)                          |
+| 16  | [Firewall Configuration](#task-16-firewall-configuration)                                            | [Solution](#task-16-firewall-configuration)                      |
+| 17  | [Process Limit Adjustment](#task-17-process-limit-adjustment)                                        | [Solution](#task-17-process-limit-adjustment)                    |
+| 18  | [SElinux Installation and Configuration](#task-18-selinux-installation-and-configuration)            | [Solution](#task-18-selinux-installation-and-configuration)      |
+
+
+--------------------------------------------------
 ## Task 1: Custom Apache User Setup
 
 ```shell
