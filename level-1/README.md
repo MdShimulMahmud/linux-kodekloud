@@ -50,3 +50,18 @@ sudo adduser -g nautilus_team_users kano
 id kano
 ```
 This command creates a new group `nautilus_team_users`, adds the user `kano` to this group, and then displays the user information for `kano` to verify the group assignment.
+
+
+## Task 3: Linux User Setup with Non-Interactive Shell
+
+```shell
+sudo useradd -s /sbin/nologin james
+# Or run this
+sudo useradd -s /bin/false james
+
+id james
+
+# Check the shell assigned to the user
+cat /etc/passwd | grep james
+```
+This command creates a new user `james` with a non-interactive shell and a specified home directory, and then displays the user information for `james` to verify the setup.
