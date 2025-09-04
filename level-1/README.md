@@ -65,3 +65,11 @@ id james
 cat /etc/passwd | grep james
 ```
 This command creates a new user `james` with a non-interactive shell and a specified home directory, and then displays the user information for `james` to verify the setup.
+
+## Task 4: Service User Creation without Home Directory
+
+```shell    
+sudo useradd -M jim
+id jim
+``` 
+This command creates a new user `jim` without a home directory and then displays the user information for `jim` to verify the setup.
