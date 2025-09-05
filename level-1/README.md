@@ -73,3 +73,11 @@ sudo useradd -M jim
 id jim
 ``` 
 This command creates a new user `jim` without a home directory and then displays the user information for `jim` to verify the setup.
+
+## Task 5: Temporary User Setup with Expiry
+
+```shell    
+sudo useradd -e 2024-12-31 rose
+id rose
+```
+This command creates a new user `rose` with an expiration date of December 31, 2024, and then displays the user information for `rose` to verify the setup.
