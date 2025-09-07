@@ -81,3 +81,13 @@ sudo useradd -e 2024-12-31 rose
 id rose
 ```
 This command creates a new user `rose` with an expiration date of December 31, 2024, and then displays the user information for `rose` to verify the setup.
+
+
+## Task 6: Linux User Data Transfer
+
+```shell    
+find /home/usersdata -type f -user rose
+
+find /home/usersdata -type f -user rose -exec cp --parents {} /beta \;
+```
+This command finds all files owned by the user `rose` in the `/home/usersdata` directory and copies them to the `/beta` directory while preserving their directory structure.
