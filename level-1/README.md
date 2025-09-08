@@ -91,3 +91,13 @@ find /home/usersdata -type f -user rose
 find /home/usersdata -type f -user rose -exec cp --parents {} /beta \;
 ```
 This command finds all files owned by the user `rose` in the `/home/usersdata` directory and copies them to the `/beta` directory while preserving their directory structure.
+
+
+## Task 7: Secure Root SSH Access
+
+```shell   
+sudo sed -i 's/^#\?PermitRootLogin .*/PermitRootLogin no/' /etc/ssh/sshd_config
+sudo systemctl restart sshd
+```
+This command modifies the SSH configuration to disable root login and then restarts the SSH service to apply the changes.
+
