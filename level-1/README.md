@@ -101,3 +101,12 @@ sudo systemctl restart sshd
 ```
 This command modifies the SSH configuration to disable root login and then restarts the SSH service to apply the changes.
 
+## Task 8: Data Backup for Developer
+
+```shell    
+sudo tar -czf /tmp/javed.tar.gz /data/javed
+sudo mv /tmp/javed.tar.gz /home/
+ls -l /home/javed.tar.gz
+
+```
+This command creates a tar archive of the `/data/javed` directory and saves it as `/home/javed.tar.gz`. 
