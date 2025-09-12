@@ -110,3 +110,11 @@ ls -l /home/javed.tar.gz
 
 ```
 This command creates a tar archive of the `/data/javed` directory and saves it as `/home/javed.tar.gz`. 
+
+## Task 9: Script Execution Permissions
+
+```shell
+sudo chmod +x /tmp/xfusioncorp.sh
+ls -l /tmp/xfusioncorp.sh
+```
+This command adds execute permissions to the `xfusioncorp.sh` script and then lists the file details to verify the permission change.
