@@ -118,3 +118,16 @@ sudo chmod +x /tmp/xfusioncorp.sh
 ls -l /tmp/xfusioncorp.sh
 ```
 This command adds execute permissions to the `xfusioncorp.sh` script and then lists the file details to verify the permission change.
+
+## Task 10: File Permission Correction
+
+```shell
+sudo chown root:root /etc/resolv.conf
+sudo chmod 644 /etc/resolv.conf
+sudo setfacl -x u:yousuf /etc/resolv.conf
+sudo setfacl -m u:yousuf:--- /etc/resolv.conf
+sudo setfacl -m u:jerome:r-- /etc/resolv.conf
+getfacl /etc/resolv.conf
+ls -l /etc/resolv.conf
+```
+This command corrects the ownership and permissions of the `/etc/resolv.conf` file, removes any existing ACL for user `yousuf`, adds a read-only ACL for user `jerome`, and then displays the ACL and file details to verify the changes.
