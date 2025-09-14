@@ -131,3 +131,11 @@ getfacl /etc/resolv.conf
 ls -l /etc/resolv.conf
 ```
 This command corrects the ownership and permissions of the `/etc/resolv.conf` file, removes any existing ACL for user `yousuf`, adds a read-only ACL for user `jerome`, and then displays the ACL and file details to verify the changes.
+
+## Task 11: String Replacement
+
+```shell
+sudo sed -i 's/About/Torpedo/g' /root/nautilus.xml
+cat /tmp/nautilus.xml | grep Torpedo | wc -l
+```
+This command replaces all occurrences of the string "About" with "Torpedo" in the `/root/nautilus.xml` file and then counts the number of lines containing the string "Torpedo" to verify the replacement.
