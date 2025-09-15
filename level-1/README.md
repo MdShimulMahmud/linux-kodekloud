@@ -139,3 +139,12 @@ sudo sed -i 's/About/Torpedo/g' /root/nautilus.xml
 cat /tmp/nautilus.xml | grep Torpedo | wc -l
 ```
 This command replaces all occurrences of the string "About" with "Torpedo" in the `/root/nautilus.xml` file and then counts the number of lines containing the string "Torpedo" to verify the replacement.
+
+## Task 12: Secure Data Transfer
+
+```shell
+scp /tmp/nautilus.txt.gpg steve@stapp02:/home/appdata
+ssh steve@stapp02
+ls -la /home/appdata/
+```
+This command securely copies the `nautilus.txt.gpg` file to the `/home/appdata` directory on the remote server `stapp02` using SCP, then connects to the remote server via SSH and lists the contents of the `/home/appdata/` directory to verify the transfer.
