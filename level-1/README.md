@@ -148,3 +148,13 @@ ssh steve@stapp02
 ls -la /home/appdata/
 ```
 This command securely copies the `nautilus.txt.gpg` file to the `/home/appdata` directory on the remote server `stapp02` using SCP, then connects to the remote server via SSH and lists the contents of the `/home/appdata/` directory to verify the transfer.
+
+## Task 13: Restrict Cron Access
+
+```shell
+sudo sh -c 'echo "ammar" > /etc/cron.allow'
+sudo sh -c 'echo "jerome" > /etc/cron.deny'
+cat /etc/cron.allow
+cat /etc/cron.deny
+```
+This command adds `ammar` to the `cron.allow` file, allowing him to use cron, and adds `jerome` to the `cron.deny` file, preventing him from using cron. It then displays the contents of both files to verify the changes.
