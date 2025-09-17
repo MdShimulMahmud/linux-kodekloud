@@ -158,3 +158,12 @@ cat /etc/cron.allow
 cat /etc/cron.deny
 ```
 This command adds `ammar` to the `cron.allow` file, allowing him to use cron, and adds `jerome` to the `cron.deny` file, preventing him from using cron. It then displays the contents of both files to verify the changes.
+
+## Task 14: Default GUI Boot Configuration
+
+```shell
+sudo systemctl set-default graphical.target
+sudo systemctl isolate graphical.target
+sudo systemctl get-default
+```
+This command sets the default boot target to graphical mode, immediately switches to graphical mode, and then verifies the current default boot target.
