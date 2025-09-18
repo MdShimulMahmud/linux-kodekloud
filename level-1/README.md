@@ -167,3 +167,11 @@ sudo systemctl isolate graphical.target
 sudo systemctl get-default
 ```
 This command sets the default boot target to graphical mode, immediately switches to graphical mode, and then verifies the current default boot target.
+
+## Task 15: Timezone Alignment
+
+```shell
+sudo timedatectl set-timezone America/Inuvik
+timedatectl
+```
+This command sets the system timezone to "America/Inuvik" and then displays the current date and time settings to verify the change.
