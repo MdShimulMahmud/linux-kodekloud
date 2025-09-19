@@ -175,3 +175,12 @@ sudo timedatectl set-timezone America/Inuvik
 timedatectl
 ```
 This command sets the system timezone to "America/Inuvik" and then displays the current date and time settings to verify the change.
+
+## Task 16: Firewall Configuration
+
+```shell
+sudo firewall-cmd --zone=public --add-port=8083/tcp --permanent
+sudo firewall-cmd --reload
+sudo firewall-cmd --zone=public --list-ports
+```
+This command opens TCP port 8083 in the public zone of the firewall permanently, reloads the firewall to apply the changes, and then lists the open ports in the public zone to verify the configuration.
