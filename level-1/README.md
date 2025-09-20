@@ -184,3 +184,15 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --zone=public --list-ports
 ```
 This command opens TCP port 8083 in the public zone of the firewall permanently, reloads the firewall to apply the changes, and then lists the open ports in the public zone to verify the configuration.
+
+## Task 17: Process Limit Adjustment
+
+```shell
+sudo sh -c 'echo "jerome hard nproc 1500" >> /etc/security/limits.conf'
+sudo sh -c 'echo "jerome soft nproc 1500" >> /etc/security/limits.conf'
+cat /etc/security/limits.conf | grep jerome 
+sudo su - jerome
+ulimit -u
+ulimit -Hu
+```
+This command sets both hard and soft process limits for the user `jerome` to 1500 in the `/etc/security/limits.conf` file, verifies the changes, switches to the `jerome` user, and then checks the current and hard process limits to confirm the settings.
