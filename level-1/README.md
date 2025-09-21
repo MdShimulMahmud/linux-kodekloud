@@ -196,3 +196,15 @@ ulimit -u
 ulimit -Hu
 ```
 This command sets both hard and soft process limits for the user `jerome` to 1500 in the `/etc/security/limits.conf` file, verifies the changes, switches to the `jerome` user, and then checks the current and hard process limits to confirm the settings.
+
+## Task 18: SElinux Installation and Configuration
+
+```shell
+sudo yum install -y selinux-policy selinux-policy-targeted policycoreutils
+sudo vi /etc/selinux/config
+# Change the line to: 
+SELINUX=disabled
+sudo setenforce 0
+sestatus
+```
+This command installs the necessary SELinux packages, modifies the SELinux configuration file to disable it, sets the current SELinux mode to permissive, and then checks the status of SELinux to verify the changes.
