@@ -46,4 +46,14 @@ sudo crontab -l
 ```
 This commands will create a cron job that runs every 5 minutes and writes "hello" to the file /tmp/cron_text.
 
+## Task 2: Linux Banner
 
+```shell
+# Do this for all application servers and db server
+scp -r /home/thor/nautilus_banner tony@stapp01:/tmp
+ssh tony@stapp01
+sudo mv /tmp/nautilus_banner /etc/motd
+cat /etc/motd
+exit
+```
+This commands will copy the nautilus_banner file to the /etc/motd file on the stapp01 server, which is displayed when a user logs in.
