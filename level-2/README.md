@@ -57,3 +57,15 @@ cat /etc/motd
 exit
 ```
 This commands will copy the nautilus_banner file to the /etc/motd file on the stapp01 server, which is displayed when a user logs in.
+
+## Task 3: Linux Collaborative Directories
+
+```shell
+sudo mkdir -p /devops/data
+sudo chown :devops /devops/data
+sudo chmod 770 /devops/data
+# Ensure new files inherit the group ownership
+sudo chmod g+s /devops/data
+ls -ld /devops/data
+```
+This commands will create the /devops/data directory, set the group ownership to devops, and set the permissions to allow read, write, and execute for the owner and group, but no permissions for others.
