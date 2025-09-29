@@ -69,3 +69,14 @@ sudo chmod g+s /devops/data
 ls -ld /devops/data
 ```
 This commands will create the /devops/data directory, set the group ownership to devops, and set the permissions to allow read, write, and execute for the owner and group, but no permissions for others.
+
+## Task 4: Linux String Substitute (sed)
+
+```shell
+grep -v 'copyright' /home/BSD.txt > /home/BSD_DELETE.txt
+cat /home/BSD_DELETE.txt
+sed 's/\bfrom\b/for/g' /home/BSD.txt > /home/BSD_REPLACE.txt
+cat /home/BSD_REPLACE.txt
+```
+This commands will create a new file BSD_DELETE.txt that contains all lines from BSD.txt except those containing the word "copyright". It will also create a new file BSD_REPLACE.txt that replaces all occurrences of the word "from" with "for".
+
